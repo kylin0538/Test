@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的公司</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+    color: #333;
+    line-height: 1.8;
+}
+header {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+header h1 { font-size: 2.5em; margin-bottom: 10px; }
+header p  { font-size: 1.1em; opacity: 0.8; }
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8em;
+    position: relative;
+}
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #e94560;
+    margin: 12px auto 0;
+}
+.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+.card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+.card .icon { font-size: 2.5em; margin-bottom: 15px; }
+.card h3 { margin-bottom: 10px; }
+.contact {
+    background: #1a1a2e;
+    color: #fff;
+    text-align: center;
+}
+.contact a { color: #e94560; text-decoration: none; }
+.contact-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.contact-item { min-width: 180px; }
+.contact-item .label { font-size: 0.85em; opacity: 0.7; margin-bottom: 5px; }
+.contact-item .value { font-size: 1.1em; }
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85em;
+    color: #999;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>公司名称</h1>
+    <p>专业 · 可靠 · 值得信赖</p>
+</header>
+
+<section>
+    <h2>主营业务</h2>
+    <div class="services">
+        <div class="card">
+            <div class="icon">&#x1F4A1;</div>
+            <h3>业务一</h3>
+            <p>在此描述你的第一项主营业务，说明为客户提供的价值。</p>
+        </div>
+        <div class="card">
+            <div class="icon">&#x1F4C8;</div>
+            <h3>业务二</h3>
+            <p>在此描述你的第二项主营业务，突出特点和优势。</p>
+        </div>
+        <div class="card">
+            <div class="icon">&#x1F91D;</div>
+            <h3>业务三</h3>
+            <p>在此描述你的第三项主营业务，展示服务内容。</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>联系方式</h2>
+    <div class="contact-items">
+        <div class="contact-item">
+            <div class="label">电话</div>
+            <div class="value">138-xxxx-xxxx</div>
+        </div>
+        <div class="contact-item">
+            <div class="label">邮箱</div>
+            <div class="value"><a href="mailto:your@email.com">your@email.com</a></div>
+        </div>
+        <div class="contact-item">
+            <div class="label">微信</div>
+            <div class="value">your_wechat</div>
+        </div>
+        <div class="contact-item">
+            <div class="label">地址</div>
+            <div class="value">你所在的城市</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 公司名称. All rights reserved.
+</footer>
+
+</body>
+</html>
